@@ -3,13 +3,13 @@
 import Store from './store.js';
 
 class UI {
-  static displayBooks() {
+  static displayBooks = () => {
     const books = Store.getBooks();
 
     books.forEach((book) => UI.addBookToList(book));
   }
 
-  static addBookToList(book) {
+  static addBookToList = (book) => {
     const list = document.querySelector('#book-list');
 
     const row = document.createElement('tr');
@@ -24,19 +24,19 @@ class UI {
     list.appendChild(row);
   }
 
-  static deleteBook(el) {
+  static deleteBook = (el) => {
     if (el.classList.contains('delete')) {
       el.parentElement.parentElement.remove();
     }
   }
 
-  static clearFields() {
+  static clearFields = () => {
     document.querySelector('#title').value = '';
     document.querySelector('#author').value = '';
     document.querySelector('#isbn').value = '';
   }
 
-  static getPageContent(page) {
+  static getPageContent = (page) => {
     switch (page) {
       case '-list-book':
         document.getElementById('list-book').classList.add('show');

@@ -1,7 +1,7 @@
 // Store Class: Handle Storage
 
 class Store {
-  static getBooks() {
+  static getBooks = () => {
     let books;
     if (localStorage.getItem('books') === null) {
       books = [];
@@ -12,13 +12,13 @@ class Store {
     return books;
   }
 
-  static addBook(book) {
+  static addBook = (book) => {
     const books = Store.getBooks();
     books.push(book);
     localStorage.setItem('books', JSON.stringify(books));
   }
 
-  static removeBook(isbn) {
+  static removeBook = (isbn) => {
     const books = Store.getBooks();
 
     books.forEach((book, index) => {
