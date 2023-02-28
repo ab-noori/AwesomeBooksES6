@@ -2,35 +2,17 @@
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-<div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="images/project-image.png" alt="logo" width="500"  height="auto" />
-  <br/>
 
-  <h3><b></b></h3>
-
-</div>
-
-<!-- Open pull request using the following structure
-
-## Awesome books: with ES6
-
-### 🌟Branch features:
-
-- i
-- ii
-- iii
-
-### [ 🚀 Branch Demo](https://ab-noori.github.io/AwesomeBooksES6/)
-
--->
-
-> # Template Repository
+> # Awesome Books
 ### Desktop view shoots for this project:
 
 | Desktop Veiw Representation|
 |---------------------------------------|
-|![screenshot](images/project-image.png)|
+|![screenshot](images/desk-shoot1.PNG)|
+
+| Desktop Veiw Representation|
+|---------------------------------------|
+|![screenshot](images/desk-shoot2.PNG)|
 
 <!-- TABLE OF CONTENTS -->
 
@@ -46,8 +28,6 @@
   - [Prerequisites](#prerequisites)
   - [Install](#install)
   - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -58,11 +38,10 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [Awesome Books ES6] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
+>  is a simple website that is created using ES6 syntax and modules to displays a list of books and allows you to add and remove books from that list.
 
-**[your_project__name]** is a...
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -70,6 +49,7 @@
 - <summary>Client</summary>
     <ul>
       <li><a href="https://reactjs.org/">HTML</a></li>
+      <li><a href="https://reactjs.org/">CSS</a></li>
       <li><a href="https://reactjs.org/">Bootstrap</a></li>
       <li><a href="https://reactjs.org/">JavaScript</a></li>
     </ul>
@@ -113,7 +93,7 @@ Clone this repository to your desired folder:
 - Use the following Commands:
 
       cd your-desired-folder
-      git clone git@github.com:ab-noori/Project-Template.git
+      git clone git@github.com:ab-noori/AwesomeBooksES6.git
 
 
 ### Install
@@ -166,7 +146,7 @@ You can deploy this project using:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/ab-noori/Awesome-Books/issues).
+Feel free to check the [issues page](https://github.com/ab-noori/AwesomeBooksES6/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
