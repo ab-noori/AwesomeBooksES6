@@ -2,8 +2,6 @@ import Book from './book.js';
 import Store from './store.js';
 import UI from './ui.js';
 
-document.querySelector('h1').innerHTML = 'READY TEMPLATE';
-
 // Event: Display Books
 document.addEventListener('DOMContentLoaded', UI.displayBooks);
 
