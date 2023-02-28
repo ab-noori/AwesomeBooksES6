@@ -35,6 +35,31 @@ class UI {
     document.querySelector('#author').value = '';
     document.querySelector('#isbn').value = '';
   }
+
+  static getPageContent(page) {
+    switch (page) {
+      case '-list-book':
+        document.getElementById('list-book').classList.add('show');
+        document.getElementById('add-book').classList.remove('show');
+        document.getElementById('contact').classList.remove('show');
+        break;
+      case '-add-book':
+        document.getElementById('list-book').classList.remove('show');
+        document.getElementById('add-book').classList.add('show');
+        document.getElementById('contact').classList.remove('show');
+        break;
+      case '-contact':
+        document.getElementById('list-book').classList.remove('show');
+        document.getElementById('add-book').classList.remove('show');
+        document.getElementById('contact').classList.add('show');
+        break;
+      default:
+        document.getElementById('list-book').classList.add('show');
+        document.getElementById('add-book').classList.remove('show');
+        document.getElementById('contact').classList.remove('show');
+        break;
+    }
+  }
 }
 
 export default UI;

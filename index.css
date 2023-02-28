@@ -5,5 +5,35 @@
 }
 
 body {
-  font-family: sans-serif;
+  position: relative;
+}
+
+header,
+footer {
+  position: fixed;
+  height: 10vh;
+}
+
+header {
+  top: 0;
+  width: 100%;
+}
+
+footer {
+  bottom: -20px;
+  width: 100%;
+}
+
+main {
+  margin-top: 10vh;
+}
+
+section {
+  height: 80vh;
+  display: none;
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
 }

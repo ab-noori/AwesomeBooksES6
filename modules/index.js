@@ -41,3 +41,9 @@ document.querySelector('#book-list').addEventListener('click', (e) => {
   // remove book from Store
   Store.removeBook(e.target.parentElement.previousElementSibling.textContent);
 });
+
+// Event: Navigate between sections
+document.querySelectorAll('.nav-link')
+  .forEach((links) => links.addEventListener('click', () => {
+    UI.getPageContent(links.id);
+  }));
