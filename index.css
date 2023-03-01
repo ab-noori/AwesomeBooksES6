@@ -25,7 +25,14 @@ footer {
 }
 
 main {
+  display: flex;
+  flex-direction: column;
   margin-top: 10vh;
+}
+
+#datetime {
+  margin-left: auto;
+  justify-self: end;
 }
 
 section {

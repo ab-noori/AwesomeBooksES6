@@ -1,3 +1,4 @@
+import { DateTime } from './luxon.js';
 import Book from './book.js';
 import Store from './store.js';
 import UI from './ui.js';
@@ -47,3 +48,16 @@ document.querySelectorAll('.nav-link')
   .forEach((links) => links.addEventListener('click', () => {
     UI.getPageContent(links.id);
   }));
+
+/* Date and time */
+
+const datetime = document.getElementById('datetime');
+
+const updateTime = () => {
+  const now = DateTime.local();
+  const formatted = now.toLocaleString(DateTime.DATETIME_FULL_WITH_SECONDS);
+  datetime.innerHTML = formatted;
+};
+
+updateTime();
+setInterval(updateTime, 1000);
