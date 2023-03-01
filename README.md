@@ -3,7 +3,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 
-> # Awesome Books
+> # Awesome Books ES6
 ### Desktop view shoots for this project:
 
 | Desktop Veiw Representation|
@@ -40,7 +40,7 @@
 
 # 📖 [Awesome Books ES6] <a name="about-project"></a>
 
->  is a simple website that is created using ES6 syntax and modules to displays a list of books and allows you to add and remove books from that list.
+> Awesome Books ES6 is a simple website that is created using ES6 syntax and modules to displays a list of books and allows you to add and remove books from that list.
 
 
 ## 🛠 Built With <a name="built-with"></a>
