@@ -4,13 +4,123 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Template</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://bootswatch.com/3/united/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Awesome Books with ES6</title>
 </head>
 <body>
-    <h1>Hi</h1>
-    
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Awesome Books</a>
+              </div>
+          
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a id="-list-book" class="nav-link" href="#">Book List</a></li>
+                  <li><a id="-add-book" class="nav-link" href="#">New Book</a></li>
+                  <li><a id="-contact" class="nav-link" href="#">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
 
-    <script src="js_modules/scripts.js"></script>
+    <main class="container mt-4">
+        <div id="datetime"></div>
+        <section id="list-book" class="show">
+            <h1 class="display-4 text-info text-center">All Awesome Books</h1>
+            <br>
+            <table class="table table-striped mt-5 bg-info table-hover">
+                <thead>
+                    <tr>
+                    <th><h6>Title</h6></th>
+                    <th><h6>Author</h6></th>
+                    <th><h6>ISBN</h6></th>
+                    <th></th>
+                    </tr>
+                </thead>
+                <tbody id="book-list">
+
+                </tbody>
+            </table>
+            <p class="text-primary">Please navigate to new book page and add new books!</p>
+        </section>
+
+        <section id="add-book">
+            <h1 class="display-4 text-success text-center">Add a New Book</h1>
+            <form id="book-form">
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="author">Author</label>
+                    <input type="text" id="author" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="isbn">ISBN</label>
+                    <input type="text" id="isbn" class="form-control">
+                </div>
+                <input type="submit" value="Add Book" class="btn btn-primary btn-block">
+            </form>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h1>Contact Information</h1>
+                <div class="d-felx flex-column">
+                    <h4>Do you have any question or you just want to say "Hello"? <br> You can reach out to us!</h4>
+                    <blockquote>
+                        <dt> Our emails: </dt>
+                        <div class="d-flex">
+                            <dd>&nbsp;&nbsp; - ab.noori@gmail.com</dd>
+                            <dd>&nbsp;&nbsp; - samson.tush@gmail.com</dd>
+                        </div>
+    
+                        <dt> Our phone numbers: </dt>
+                        <div class="d-flex">
+                            <dd>&nbsp;&nbsp; - Tush +256752561029</dd>
+                            <dd>&nbsp;&nbsp; - Noori +93783304407</dd>
+                        </div>
+    
+                        <dt> Our address: </dt>
+                        <div class="d-flex">
+                            <dd>&nbsp;&nbsp; - Noori: Kabul, Afghanistan</dd>
+                            <dd>&nbsp;&nbsp; - Tush: Kigali, Rwanda</dd>
+                        </div>
+                    </blockquote> 
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="navbar navbar-default fixed-bottom ">
+            <div class="container">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#">Awesome Books</a>
+              </div>
+          
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#">2023 © AwesomeBooks. Some Rights Reserved.</a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="modules/index.js" type="module"></script>
 </body>
 </html>

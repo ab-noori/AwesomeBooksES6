@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+
+header,
+footer {
+  position: fixed;
+  height: 10vh;
+}
+
+header {
+  top: 0;
+  width: 100%;
+}
+
+footer {
+  bottom: -20px;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10vh;
+}
+
+#datetime {
+  margin-left: auto;
+  justify-self: end;
+}
+
+section {
+  height: 80vh;
+  display: none;
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+}
